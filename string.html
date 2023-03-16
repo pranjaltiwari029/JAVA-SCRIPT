@@ -7,6 +7,29 @@
     <title>Document</title>
 </head>
 <body>
-    <script src="string.js"></script>
+    <h2>Fixing capitalization</h2>
+    <!-- <script src="string.js"></script> -->
+    <div class="output">
+        <ul>
+            
+        </ul>
+    </div>
+    <script>
+        const list=document.querySelector('.output ul');
+        list.innerHTML='';
+        let cities =  ['mumbai','DELhi','JaIPur',];
+
+        for( let i=0;i<cities.length;i++){
+            let lowerCaseCity=cities[i].toLowerCase();
+            let firstAplha= lowerCaseCity.slice(0,1);
+            
+            lowerCaseCity.replace(firstAplha,firstAplha.toUpperCase());
+            let listItem=document.createElement('li');
+            listItem.textContent=lowerCaseCity;
+            list.appendChild(listItem);
+        }
+    </script>
+
+
 </body>
 </html>
