@@ -37,3 +37,24 @@ function course(title){
         
     }
 }
+// const Course= new course('javascript');
+// Course.enroll()
+
+
+// const course = new Course('javascript')
+// console.log(course.constructor)
+// consolr.log(newCourse.constructor)
+
+
+// let num=10;
+// let num2=num;
+// num=15;
+// console.log(num);
+// console.log(num2);
+
+// // reference datatype
+// let obj={num:10};
+// let obj2=obj;
+// obj=20
+// console.log(obj);
+// console.log(obj2)
