@@ -58,3 +58,17 @@ function course(title){
 // obj=20
 // console.log(obj);
 // console.log(obj2)
+
+// const course1={ ...course}
+// course1.title="c++";
+
+// const course=Object.assign{{},course}
+// course_1.title="C++"
+
+for(let key in course){
+    console.log(key,course[key]);
+}
+
+for(let value of Object.keys()){
+    console.log(key,course[key]);
+}
