@@ -27,3 +27,27 @@ console.log(names.indexOf('pranjal'))
 
 //last inndex of
 console.log(names.lastIndexOf('pranjal'))
+
+let channels=[{
+    name:'pranjal vlogs',subscriber:2500
+},
+{name:'tapans lifestyle',subscriber:2000}
+];
+
+
+console.log(channels.find(function(varaible) {
+    return varaible.name==='pranjal vlogs';
+    
+}))
+//array concatination
+let n1=['hello','how','are']
+let n2=['you ',',hope', 'you', 'will be', 'fine!']
+let n3=n1.concat(n2)
+console.log(n3)
+
+//slice
+
+console.log(n3.slice(3))
+///sprea operators
+
+
