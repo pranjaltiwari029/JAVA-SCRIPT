@@ -48,6 +48,7 @@ console.log(n3)
 //slice
 
 console.log(n3.slice(3))
-///sprea operators
-
-
+///spread operators
+let n4=[...n1,...n2]
+console.log(n4)
+//for loop
