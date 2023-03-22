@@ -24,3 +24,33 @@ function first(){
 first()
 
 
+//using var keyword
+var x=10
+{
+    var x=1;
+    console.log(x);
+}
+console.log(x)
+
+//using let keyword
+let y=10;
+{
+    let y=1;
+    console.log(y)
+}
+console.log(y)
+
+//lexical scope
+function base(){
+    var name='base';
+    function derived1(){
+        console.log(name)
+        function derived2(){
+            var likes='coding';
+        }
+        //console.log(likes);
+        derived2()
+    }
+    derived1()
+}
+base()
