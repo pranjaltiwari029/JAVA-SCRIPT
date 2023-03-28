@@ -21,7 +21,7 @@
 </head>
 <body>
     <div class="box">
-        <img  id="bulb" src="bulb-off.jpg" alt="off" height="30%">
+        <img  id="bulb" src="bulb-off.jpg" alt="off" height="50%">
         <button id="toggleBtn" class="btn">Turn On</button>
     </div>
 
@@ -33,12 +33,12 @@
 
         function toggleBulb(e){
             if(btn.textContent.includes('On')){
-                bulb.src="bulb-off.jpg";
+                bulb.src="bulb-on.jpg";
                 btn.textContent="Turn-Off"
 
             }
             else{
-                bulb.src="bulb-on.jpg";
+                bulb.src="bulb-off.jpg";
                 btn.textContent="Turn-On"
 
             }
