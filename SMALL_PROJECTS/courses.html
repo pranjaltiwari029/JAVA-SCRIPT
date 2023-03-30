@@ -10,7 +10,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-warning bg-dark">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">CRUD APP</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -53,20 +53,34 @@
                     <button id="add_btn" class="btn btn-outline-success" type="button" id="button-addon">Add</button>
                 </div>
             </div>
-            <ul class="list-group">
-                <li class="list-group-item">an item </li>
+            <ul id="parentList" class="list-group">
+                <li class="list-group-item d-flex justify-content-between">
+                  <h3 class="flex-grow-1">Chapter 1</h3>
+                  <button class="btn btn-warning ">Edit</button>
+                  <button class="btn btn-danger">Delete</button>
+                </li>
             </ul>
         </div>
     </main>
+
+
     <script>
-        let addBtn =  document.getElementById('add_btn')
+        let addBtn = document.getElementById('add_btn')
         addBtn.addEventListener('click', addChapter)
         function addChapter(e){
             let currentBtn = e.currentTarget;
-            let currentInput= currentBtn.previousElementSibling
-            console.log(currentInput.value)
+            let currentInput=currentBtn.previousElementSibling;
+            //console.log(Input.value)
+
+            let newLi= document.createElement('li')
+            newLi.classList.add('list-group-item ')
+            //newLi.textContent= currentInput.value
+
+            let parentList =document.getElementById('parentList');
+            parentList.appendChild(newLi)
            
         }
+        //console.log('hello how are you')
     </script>
     
 </body>
